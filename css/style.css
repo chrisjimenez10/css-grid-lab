@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 7fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Luckiest Guy", cursive;
+}
+nav {
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.left {
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.middle {
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.links {
+    cursor: pointer;
+}
+.links:hover {
+    transform: scale(1.05);
+}
+.links:active {
+    color: hsl(0, 17%, 98%);
+    transition: 250ms;
+}
+.right {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#sign-up {
+    font-family: "Luckiest Guy", cursive;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#sign-up:hover {
+    transform: scale(1.05);
+}
+#sign-up:active {
+    color: hsla(0, 20%, 98%, 0.884);
+    transition: 250ms;
+}
+.hero-container {
+    background-color: beige;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+.description-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.description-text {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    font-family: "Luckiest Guy", cursive;
+} 
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.start-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#start-button {
+    font-family: "Luckiest Guy", cursive;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#start-button:hover {
+    transform: scale(1.05);
+}
+#start-button:active {
+    color: hsla(0, 20%, 98%, 0.884);
+    transition: 250ms;
+}
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 5px 5px 5px;
+}
+img {
+    border-radius: 150px;
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+}
+.social-proof-container {
+    background-color: blue;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+.social-proof-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    font-size: 1.5rem;
+}
+.social-proof-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.icons {
+   display: flex;
+   justify-content: center;
+}
+
+
+.posts-container {
+    background-color: blueviolet;
+}
+.footer-container {
+    background-color: brown;
+}
+
+/* Break-Point for screen size smaller than 650px */
+@media (max-width: 650px) {
+    body {
+        grid-template-columns: 1fr;
+        
+    }
+    nav {
+        grid-template-columns: 1fr;
+    }
+    .hero-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .description-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .social-proof-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .social-proof-icons {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+}
+
+/* Break-Point for image (It gets too big proportionately) */
+@media (max-width: 350px) {
+    img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 650px) {
+    nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 25vw;
+        height: 50vh;
+        grid-template-areas:
+        "left"
+        "middle"
+        "right"
+    }
+    .left {
+        grid-area: "left";
+    }
+    .middle {
+        grid-area: "middle";
+        display: flex;
+        flex-direction: column;
+    }
+    .right {
+        grid-area: "right";
+    }
+    #sign-up {
+        width: 75px;
+        height: 30px;
+    }
+} */
