@@ -7,7 +7,7 @@
 body {
     background-color: white;
     display: grid;
-    grid-template-rows: 1fr 7fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 7fr 2fr 7fr 2fr;
     grid-template-columns: 1fr;
     min-height: 100vh;
     margin: 0;
@@ -80,6 +80,7 @@ nav {
     justify-content: center;
     gap: 1.5em;
     font-family: "Luckiest Guy", cursive;
+    padding: 25px;
 } 
 h1 {
     display: flex;
@@ -100,6 +101,8 @@ p {
     font-family: "Luckiest Guy", cursive;
     border-radius: 10px;
     cursor: pointer;
+    width: 150px;
+    height: 30px;
 }
 #start-button:hover {
     transform: scale(1.05);
@@ -112,7 +115,6 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    box-shadow: 5px 5px 5px;
 }
 img {
     border-radius: 150px;
@@ -141,11 +143,35 @@ h2 {
    display: flex;
    justify-content: center;
 }
-
-
 .posts-container {
     background-color: blueviolet;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
+.top-container {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+#dark-square {
+    background-color: hsl(from black h 5% 10%);
+}
+#dark-text {
+    background-color: hsl(from black h 5% 0%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 60px;
+    padding: 30px;
+}
+
+
+.bottom-container {
+    background-color: aqua;
+}
+
+
 .footer-container {
     background-color: brown;
 }
